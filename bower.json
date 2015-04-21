@@ -1,0 +1,43 @@
+{
+  "name": "stencil-product-tile",
+  "version": "0.0.0",
+  "description": "A simple product tile component",
+  "authors": [
+    "Mobify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mobify/stencil-product-tile.git"
+  },
+  "keywords": [
+    "mobify",
+    "components",
+    "patterns"
+  ],
+  "license": "MIT",
+  "main": [
+    "product-tile.js",
+    "product-tile.schema.js",
+    "product-tile.scss"
+  ],
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "Gruntfile.js",
+    "tests"
+  ],
+  "dependencies": {
+    "spline": "~1.0.1",
+    "level": "mobify/level#~0.0.1",
+    "stencil-variables": "ry5n/stencil-variables",
+    "stencil-rating-stars": "mobify/stencil-star-rating#dev",
+    "mobify-stencil": "~0.3.0",
+    "dustjs-component": "mobify/dustjs-helper-component#adaptive-compat"
+  },
+  "devDependencies": {
+    "stencil-spec": "ry5n/stencil-spec#dev",
+    "requirejs": "^2.1.0",
+    "text": "^2.0.0"
+  }
+}

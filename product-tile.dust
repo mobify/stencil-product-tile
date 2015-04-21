@@ -1,0 +1,23 @@
+<article class="c-product-tile">
+    <a href="{anchor}">
+
+        <img class="c-product-tile__image" src="{photo.src}" alt="{photo.alt}" />
+
+        {@c-rating-scale ratingTotal=70 /}
+
+        <h2 class="c-product-tile__title">{title}</h2>
+
+        <div class="c-product-tile__prices">
+            {?salePrice}
+                <span class="c-product-tile__price {?salePrice}c--sale{/salePrice}">
+                    {salePrice}
+                </span>
+            {/salePrice}
+
+            <span class="c-product-tile__price {?salePrice}c--was{/salePrice}">
+                {regularPrice}
+            </span>
+        </div>
+
+    </a>
+</article>

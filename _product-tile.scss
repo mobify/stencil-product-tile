@@ -1,0 +1,72 @@
+// Product Tile
+// ===
+//
+
+// Configurable Variables
+// ---
+//
+
+$rating-scale__img-path: '../bower_components/stencil-rating-stars/assets/sprite-review-stars@2x.png';
+
+
+// Dependencies
+// ---
+//
+
+@import 'stencil-variables/src/style';
+@import 'stencil-rating-stars/rating-scale';
+
+
+// Product Tile Root
+// ---
+//
+
+.c-product-tile {
+    margin-bottom: $unit;
+
+    a {
+        text-decoration: none;
+    }
+
+    .c-rating-scale {
+        margin-top: $unit;
+        margin-left: $unit;
+    }
+}
+
+// Product Tile Image
+// --
+//
+
+.c-product-tile__image {
+    display: block;
+    width: 100%;
+}
+
+// Product Title
+// --
+//
+
+.c-product-tile__title {
+    padding: 0 $unit;
+
+    font-family: $font-family;
+}
+
+// Product Tile Price
+// --
+//
+
+.c-product-tile__price {
+    padding: 0 $unit $unit;
+
+    color: $neutral-70;
+    font-family: $font-family;
+
+    &.c--sale {
+    }
+
+    &.c--was {
+        color: $neutral-50;
+    }
+}
