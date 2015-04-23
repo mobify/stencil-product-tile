@@ -4,6 +4,7 @@
 
 {@c-spec for="Product Tile" repository=repo}
     {@c-spec__test describe=".c-product-tile"}
+
         {@c-spec__case expect="Displays a product tile"}
             {@c-product-tile ctx=product /}
         {/c-spec__case}
@@ -11,5 +12,13 @@
         {@c-spec__case expect="Optionally, it can display a sale price"}
             {@c-product-tile ctx=product salePrice="$12.99" /}
         {/c-spec__case}
+
+        {@c-spec__case expect="It can be displayed in a grid using the grid component"}
+            <div class="c-grid c--2up c--gutters">
+                {@c-product-tile ctx=product gridClass="c-grid__span" /}
+                {@c-product-tile ctx=product gridClass="c-grid__span" /}
+            </div>
+        {/c-spec__case}
+
     {/c-spec__test}
 {/c-spec}

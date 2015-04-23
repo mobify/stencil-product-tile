@@ -1,4 +1,4 @@
-<article class="c-product-tile">
+<article class="c-product-tile {?gridClass}{gridClass}{/gridClass}">
     <a href="{anchor}">
 
         <img class="c-product-tile__image" src="{photo.src}" alt="{photo.alt}" />
