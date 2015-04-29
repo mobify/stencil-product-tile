@@ -15,8 +15,8 @@
 
         {@c-spec__case expect="It can be displayed in a grid using the grid component"}
             <div class="c-grid c--2up c--gutters">
-                {@c-product-tile ctx=product gridClass="c-grid__span" /}
-                {@c-product-tile ctx=product gridClass="c-grid__span" /}
+                {@c-product-tile ctx=product class="c-grid__span" /}
+                {@c-product-tile ctx=product class="c-grid__span" /}
             </div>
         {/c-spec__case}
 

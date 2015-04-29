@@ -27,14 +27,14 @@ $rating-scale__img-path: '../bower_components/stencil-rating-stars/assets/sprite
 .c-product-tile {
     margin-bottom: $unit;
 
-    a {
-        text-decoration: none;
-    }
-
     .c-rating-scale {
         margin-top: $unit;
         margin-left: $unit;
     }
+}
+
+.c-product-tile__inner {
+    text-decoration: none;
 }
 
 // Product Tile Image
